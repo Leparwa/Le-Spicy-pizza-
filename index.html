@@ -596,6 +596,9 @@
                     <span>
                      <p id="quantity"></p>
                     </span>
+                    <span>
+                      <p id="deliverSection"></p>
+                     </span>
                     <span class="d-flex justify-content-end">
                       <button class="btn btn-sm btn-primary" id="add_pizza"> 
                         add
@@ -606,7 +609,62 @@
                     <h4 class="text-center">Delivery</h4>
                     <div class="row">
                       <div class="col-12">
-
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="true">Pick </button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="deliver" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="false">Deliver</button>
+                          </li>
+                        
+                         
+                        </ul>
+                        <div class="m-4">
+                          <h5>Enter Your Delivery Location</h5>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                          <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="d-flex justify-content-center mt-4">
+                              <address>
+                                email us <a href="kevinleparwa@gmail.com">kevin leparwa</a>.<br> <br>
+                                Visit us at:<br> <br>
+                                Le~spiccy pizza<br> <br>
+                                Box 564, Nairobi<br> <br>
+                                Kenya
+                                </address>
+                            </div>
+                          </div>
+                          <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="deliver">
+                            <form class="row g-3">
+                              <div class="col-md-6">
+                                <label for="inputPassword4" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="inputName">
+                              </div>
+                              <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4">
+                              </div>
+                             
+                              <div class="col-12">
+                                <label for="inputAddress" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                              </div>
+                            
+                              <div class="col-md-6">
+                                <label for="inputCity" class="form-label">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                              </div>
+                             
+                              <div class="col-md-2">
+                                <label for="inputZip" class="form-label">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                              </div>
+                           
+                           
+                            </form>
+                          </div>
+ 
+                        </div>
                       </div>
                     </div>
                   </div>

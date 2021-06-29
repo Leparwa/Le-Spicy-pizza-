@@ -31,23 +31,35 @@ function displayPrices() {
 
 
   }
- 
-$(document).ready(function(){
-    $("#checkoutButton").click(function(){
-        console.log("you clicked this one")
-    })
-})
+  var price = 400
+  var quantity = 1;
+  var deliveryFee = 0
+  $("#price").text("Total:  ksh" + "  "+price);
+  $("#deliverSection").text("Delivery Fee:  ksh" + "  "+deliveryFee);
 
 $(document).ready(function(){
-    var price = 400
-    var quantity = 1;
-    $("#price").text("Price:  ksh" + "  "+price);
+    $("#checkoutButton").click(function(){
+    })
+})
+$(document).ready(function(){
+    $("#deliver").click(function(){
+        deliveryFee=deliveryFee+20;
+        price = price+deliveryFee
+        $("#deliverSection").text("Delivery Fee:  ksh" + "  "+deliveryFee);
+        $("#price").text("Total: ksh" + "  "+price);
+
+
+    })
+
+})
+$(document).ready(function(){
+   
     $("#quantity").text("Quantity:" + "  "+quantity);
     $("#add_pizza").click(function(){
         quantity=quantity+1
         price = price*quantity
         $("#quantity").text("Quantity: " + ""+quantity);
-        $("#price").text("Price: ksh" + "  "+price);
+        $("#price").text("Total: ksh" + "  "+price);
 
     })
 
