@@ -39,6 +39,7 @@ function displayPrices() {
 
 $(document).ready(function(){
     $("#checkoutButton").click(function(){
+        alert("We Have Received Your Order")
     })
 })
 $(document).ready(function(){
