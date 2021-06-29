@@ -22,7 +22,7 @@ This is a web app that allow users to order for pizza of their choices.
 ##  **Known Bugs**
 #### There are no Bugs on this file but should you experience any difficulties in accessing or getting the information you need, or come across anything kindly share with me via my email [email](kevinleparwa@gmail.com)
 ## My gh-pages link
-[gh-page](https://leparwa.github.io/myPortFolio/)
+[gh-page](https://leparwa.github.io/Le-Spicy-pizza-/)
 ## My contact details
 you can find me on twitter @kevin_leresi
 ## Licence
